@@ -20,7 +20,7 @@ const BlogList = ({ posts }: { posts: Post[] }) => {
             >
               <div className="relative h-48 overflow-hidden">
                 <ParallaxImage src={post.imageSrc} alt={post.title} className="size-full object-cover" />
-                <span className="absolute top-3 left-3 px-3 py-1 text-xs rounded-full bg-primary text-primary-foreground">
+                <span className="absolute top-3 left-3 px-3 py-1 text-xs rounded-full bg-background/70 backdrop-blur border border-border text-foreground">
                   {post.category}
                 </span>
               </div>

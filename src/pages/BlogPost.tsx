@@ -35,7 +35,7 @@ const BlogPost = () => {
       </Link>
 
       <div className="flex items-center gap-3 mb-4 text-sm text-muted-foreground">
-        <span className="px-3 py-1 rounded-full bg-primary text-primary-foreground">{post.category}</span>
+        <span className="px-3 py-1 rounded-full border border-border text-foreground">{post.category}</span>
         <span>{formatDate(post.date)}</span>
         <span>·</span>
         <span>{post.readingTime}</span>

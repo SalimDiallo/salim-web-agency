@@ -1,7 +1,7 @@
-import { Monitor, Zap, Shield, Sparkles, ArrowUpRight } from "lucide-react";
+import { Monitor, Zap, Shield, Sparkles } from "lucide-react";
 import HeroSplitVerticalMarqueeTall from "@/components/sections/hero/HeroSplitVerticalMarqueeTall";
 import ServicesBig from "@/components/sections/services/ServicesBig";
-import FeaturesMediaCarousel from "@/components/sections/features/FeaturesMediaCarousel";
+import ProjectCards from "@/components/sections/projects/ProjectCards";
 import PromiseShowcase from "@/components/sections/promise/PromiseShowcase";
 import TestimonialShowcase from "@/components/sections/testimonial/TestimonialShowcase";
 import TeamStackedCards from "@/components/sections/team/TeamStackedCards";
@@ -32,6 +32,16 @@ const Home = () => {
         />
       </div>
 
+      <div id="work" data-section="work">
+        <ProjectCards
+          textAnimation="fade-blur"
+          tag="Projets"
+          title="Mes réalisations"
+          description="Une sélection de mon travail récent."
+          projects={projects}
+        />
+      </div>
+
       <ClientLogos label="Ils m'ont fait confiance" clients={clients} />
 
       <StatStrip stats={stats} />
@@ -49,22 +59,6 @@ const Home = () => {
           tag="Services"
           title="Ce que je fais"
           services={services}
-        />
-      </div>
-
-      <div id="work" data-section="work">
-        <FeaturesMediaCarousel
-          textAnimation="fade-blur"
-          tag="Projets"
-          title="Des réalisations qui parlent"
-          description="Une sélection de mon travail."
-          items={projects.map((p) => ({
-            title: p.title,
-            description: p.category,
-            imageSrc: p.imageSrc,
-            buttonIcon: ArrowUpRight,
-            buttonHref: `/projets`,
-          }))}
         />
       </div>
 

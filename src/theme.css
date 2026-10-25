@@ -3,25 +3,25 @@
 @import "./styles/masks.css";
 
 :root {
-  --background: #0a0f0d;
-  --foreground: #eef5f1;
-  --card: #121816;
-  --card-foreground: #eef5f1;
-  --popover: #121816;
-  --popover-foreground: #eef5f1;
-  --primary: #10b981;
-  --primary-foreground: #04120c;
-  --secondary: #16211c;
-  --secondary-foreground: #d7e7df;
-  --muted: color-mix(in srgb, #34d399 6%, #0a0f0d);
-  --muted-foreground: color-mix(in srgb, #d7e7df 60%, #0a0f0d);
-  --accent: #34d399;
-  --accent-foreground: #04120c;
+  --background: #0a0a0b;
+  --foreground: #f2f3f3;
+  --card: #151617;
+  --card-foreground: #f2f3f3;
+  --popover: #151617;
+  --popover-foreground: #f2f3f3;
+  --primary: #2f9e82;
+  --primary-foreground: #ffffff;
+  --secondary: #1b1d1e;
+  --secondary-foreground: #d6d8d8;
+  --muted: color-mix(in srgb, #ffffff 5%, #0a0a0b);
+  --muted-foreground: color-mix(in srgb, #d6d8d8 55%, #0a0a0b);
+  --accent: #2f9e82;
+  --accent-foreground: #ffffff;
   --destructive: #ef4444;
   --destructive-foreground: #ffffff;
-  --border: color-mix(in srgb, #34d399 14%, #0a0f0d);
-  --input: color-mix(in srgb, #34d399 14%, #0a0f0d);
-  --ring: #10b981;
+  --border: color-mix(in srgb, #ffffff 10%, #0a0a0b);
+  --input: color-mix(in srgb, #ffffff 10%, #0a0a0b);
+  --ring: #2f9e82;
   --radius: 1.5rem;
 }
 

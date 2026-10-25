@@ -31,7 +31,7 @@ export const brand = {
   website: "www.salimdiallo.com",
   websiteUrl: "https://www.salimdiallo.com",
   description:
-    "SD conçoit et développe des sites web et plateformes sur-mesure, rapides et élégants, qui transforment vos visiteurs en clients.",
+    "Sites web sur-mesure, rapides et élégants, qui convertissent.",
   copyright: `© ${new Date().getFullYear()} Salim Diallo — SD Web Studio. Tous droits réservés.`,
 };
 
@@ -75,8 +75,7 @@ export const projects: Project[] = [
     title: "Vitality Wellness",
     category: "Santé & bien-être",
     year: "2025",
-    description:
-      "Plateforme de bien-être avec réservation en ligne, blog santé et espace membre personnalisé.",
+    description: "Réservation en ligne et espace membre pour une marque bien-être.",
     imageSrc:
       "https://storage.googleapis.com/webild/default/templates/web-agency-2/projectnew1.webp",
     tags: ["Web app", "Réservation", "SEO"],
@@ -86,8 +85,7 @@ export const projects: Project[] = [
     title: "Mailflow AI",
     category: "SaaS / IA",
     year: "2025",
-    description:
-      "Plateforme d'email marketing propulsée par l'IA : automatisations, analytics et éditeur visuel.",
+    description: "Email marketing propulsé par l'IA : automatisations et analytics.",
     imageSrc:
       "https://storage.googleapis.com/webild/default/templates/web-agency-2/projectnew2.webp",
     tags: ["SaaS", "Dashboard", "IA"],
@@ -97,8 +95,7 @@ export const projects: Project[] = [
     title: "Kinetic Studios",
     category: "Studio créatif",
     year: "2024",
-    description:
-      "Site vitrine immersif pour un studio de motion design, avec galerie vidéo et animations sur-mesure.",
+    description: "Vitrine immersive pour un studio de motion design.",
     imageSrc:
       "https://storage.googleapis.com/webild/default/templates/web-agency-2/projectnew3.webp",
     tags: ["Vitrine", "Motion", "Branding"],
@@ -117,29 +114,25 @@ export const process: ProcessStep[] = [
     icon: Search,
     step: "01",
     title: "Découverte & stratégie",
-    description:
-      "On cerne vos objectifs, votre audience et vos concurrents pour définir la bonne direction.",
+    description: "On cerne vos objectifs pour définir la bonne direction.",
   },
   {
     icon: PenTool,
     step: "02",
     title: "Design & prototype",
-    description:
-      "Maquettes et prototypes interactifs validés ensemble avant la moindre ligne de code.",
+    description: "Maquettes validées ensemble avant le code.",
   },
   {
     icon: Code,
     step: "03",
     title: "Développement",
-    description:
-      "Développement soigné, rapide et responsive, avec des points réguliers pour rester alignés.",
+    description: "Code soigné, rapide et responsive.",
   },
   {
     icon: Rocket,
     step: "04",
     title: "Lancement & suivi",
-    description:
-      "Mise en ligne, optimisation SEO et accompagnement continu pour faire grandir votre présence.",
+    description: "Mise en ligne, SEO et accompagnement continu.",
   },
 ];
 
@@ -292,7 +285,7 @@ export type Testimonial = {
 export const testimonials: Testimonial[] = [
   {
     quote:
-      "SD a totalement transformé notre présence en ligne. Un site superbe, livré dans les délais, qui a doublé notre taux de conversion. Un vrai partenaire, pas juste un prestataire.",
+      "Un site superbe, livré dans les délais, qui a doublé notre taux de conversion.",
     author: "Maria Santos",
     role: "CEO · Luxuria Travel",
     rating: 5,
@@ -333,27 +326,27 @@ export const faq: FaqItem[] = [
   {
     question: "Combien de temps dure un projet ?",
     answer:
-      "La plupart des projets sont livrés en 2 à 4 semaines selon leur ampleur. Vous recevez un planning détaillé dès le premier échange.",
+      "2 à 4 semaines selon l'ampleur. Vous recevez un planning dès le premier échange.",
   },
   {
     question: "Comment se passe la tarification ?",
     answer:
-      "Je travaille au forfait, adapté à chaque projet. Chaque devis inclut le design, le développement, l'optimisation SEO et le support après lancement.",
+      "Au forfait. Chaque devis inclut design, développement, SEO et support.",
   },
   {
     question: "Proposez-vous de la maintenance ?",
     answer:
-      "Oui. Des forfaits de maintenance et de support permettent de garder votre site à jour, sécurisé et performant dans la durée.",
+      "Oui. Des forfaits de maintenance gardent votre site à jour et sécurisé.",
   },
   {
     question: "Pouvez-vous refaire mon site existant ?",
     answer:
-      "Absolument. Je suis spécialisé dans les refontes qui modernisent votre marque tout en préservant votre contenu et votre référencement.",
+      "Absolument. Je modernise votre marque en préservant contenu et SEO.",
   },
   {
     question: "Quelles technologies utilisez-vous ?",
     answer:
-      "Des technologies modernes et éprouvées : React, Next.js et Tailwind CSS, pour des sites rapides, évolutifs et faciles à maintenir.",
+      "React, Next.js et Tailwind CSS : rapides, évolutifs et faciles à maintenir.",
   },
 ];
 

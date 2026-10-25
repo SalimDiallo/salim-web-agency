@@ -1,29 +1,30 @@
 import { useNavigate } from "react-router-dom";
-import PageHero from "@/components/sections/common/PageHero";
-import FeaturesBorderGlow from "@/components/sections/features/FeaturesBorderGlow";
+import ServicesHero from "@/components/sections/services/ServicesHero";
+import ServicesBento from "@/components/sections/services/ServicesBento";
 import ProcessTimeline from "@/components/sections/process/ProcessTimeline";
 import MetricsFeatureCards from "@/components/sections/metrics/MetricsFeatureCards";
 import FaqCreative from "@/components/sections/faq/FaqCreative";
 import ContactCenter from "@/components/sections/contact/ContactCenter";
-import { services, process, metrics, faq } from "@/data/site";
+import { process, metrics, faq } from "@/data/site";
 
 const Services = () => {
   const navigate = useNavigate();
 
   return (
     <>
-      <PageHero
+      <ServicesHero
         tag="Services"
-        title="Ce que je fais"
-        description="Une offre complète pour des sites qui performent."
+        description="Studio digital sur-mesure. Design, développement et stratégie réunis."
+        chips={["Développement", "E-commerce", "Design", "SEO", "Mobile", "Maintenance"]}
+        primaryButton={{ text: "Démarrer un projet", href: "/contact" }}
+        secondaryButton={{ text: "Voir les projets", href: "/projets" }}
       />
 
-      <FeaturesBorderGlow
+      <ServicesBento
         textAnimation="fade-blur"
         tag="Expertises"
         title="Un studio, toutes les compétences"
         description="Design, technique et stratégie réunis."
-        features={services.map((s) => ({ icon: s.icon, title: s.title, description: s.description }))}
         primaryButton={{ text: "Démarrer un projet", href: "/contact" }}
       />
 
