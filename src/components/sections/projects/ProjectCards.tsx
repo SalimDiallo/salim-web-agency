@@ -60,6 +60,8 @@ const ProjectCards = ({
           <AppearOnScroll key={project.slug} variant="slide-up" delay={index * 0.08} className="h-full">
             <a
               href={project.url ?? "#"}
+              target={project.url ? "_blank" : undefined}
+              rel={project.url ? "noopener noreferrer" : undefined}
               className="group flex flex-col h-full overflow-hidden card cursor-pointer"
             >
               <div className="relative h-48 overflow-hidden">

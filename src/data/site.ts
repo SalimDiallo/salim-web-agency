@@ -71,34 +71,24 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    slug: "vitality-wellness",
-    title: "Vitality Wellness",
-    category: "Santé & bien-être",
+    slug: "lumiere-co",
+    title: "Lumière & Co",
+    category: "Hôtellerie & luxe",
     year: "2025",
-    description: "Réservation en ligne et espace membre pour une marque bien-être.",
-    imageSrc:
-      "https://storage.googleapis.com/webild/default/templates/web-agency-2/projectnew1.webp",
-    tags: ["Web app", "Réservation", "SEO"],
+    description: "Boutique hôtel en Méditerranée : chambres, spa et réservation, hero vidéo et animations soignées.",
+    imageSrc: "/projects/lumiere.webp",
+    url: "https://hotel-website-three-psi.vercel.app/",
+    tags: ["Vitrine", "Hôtellerie", "Animations"],
   },
   {
-    slug: "mailflow-ai",
-    title: "Mailflow AI",
-    category: "SaaS / IA",
+    slug: "aguifa-finance",
+    title: "AGUIFA Dev Finance",
+    category: "Finance & institutionnel",
     year: "2025",
-    description: "Email marketing propulsé par l'IA : automatisations et analytics.",
-    imageSrc:
-      "https://storage.googleapis.com/webild/default/templates/web-agency-2/projectnew2.webp",
-    tags: ["SaaS", "Dashboard", "IA"],
-  },
-  {
-    slug: "kinetic-studios",
-    title: "Kinetic Studios",
-    category: "Studio créatif",
-    year: "2024",
-    description: "Vitrine immersive pour un studio de motion design.",
-    imageSrc:
-      "https://storage.googleapis.com/webild/default/templates/web-agency-2/projectnew3.webp",
-    tags: ["Vitrine", "Motion", "Branding"],
+    description: "Finance durable pour l'Afrique : site institutionnel multilingue, analyse d'investissement et due diligence.",
+    imageSrc: "/projects/aguifa.webp",
+    url: "https://www.aguifa-finance.com/",
+    tags: ["Institutionnel", "Finance", "Multilingue"],
   },
 ];
 
