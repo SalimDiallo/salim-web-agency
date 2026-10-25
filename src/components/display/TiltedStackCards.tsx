@@ -1,0 +1,34 @@
+import type { LucideIcon } from "lucide-react";
+import { clsx, type ClassValue } from "clsx";
+import { twMerge } from "tailwind-merge";
+
+const cn = (...inputs: ClassValue[]) => twMerge(clsx(inputs));
+
+type Item = { icon: LucideIcon; title: string; subtitle: string; detail: string };
+
+const POS = ["-translate-y-14 hover:-translate-y-20", "translate-x-16 hover:-translate-y-4", "translate-x-32 translate-y-16 hover:translate-y-10"];
+
+const TiltedStackCards = ({ items }: { items: [Item, Item, Item] }) => (
+  <div
+    className="h-full grid place-items-center [grid-template-areas:'stack']"
+    style={{ maskImage: "linear-gradient(to bottom, transparent, black 10%, black 90%, transparent), linear-gradient(to right, black, black 80%, transparent)", maskComposite: "intersect" }}
+  >
+    {items.map((item, i) => {
+      const Icon = item.icon;
+      return (
+        <div key={i} className={cn("flex flex-col justify-between gap-2 p-6 w-80 h-36 card rounded transition-all duration-500 -skew-y-[8deg] [grid-area:stack] 2xl:w-90", POS[i])}>
+          <div className="flex items-center gap-2">
+            <div className="flex items-center justify-center size-5 rounded bg-primary text-primary-foreground">
+              <Icon className="size-3 text-primary-foreground" strokeWidth={1.5} />
+            </div>
+            <p className="text-base">{item.title}</p>
+          </div>
+          <p className="text-lg whitespace-nowrap">{item.subtitle}</p>
+          <p className="text-base">{item.detail}</p>
+        </div>
+      );
+    })}
+  </div>
+);
+
+export default TiltedStackCards;

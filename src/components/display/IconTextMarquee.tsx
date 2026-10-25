@@ -1,0 +1,30 @@
+import type { LucideIcon } from "lucide-react";
+import { clsx, type ClassValue } from "clsx";
+import { twMerge } from "tailwind-merge";
+
+const cn = (...inputs: ClassValue[]) => twMerge(clsx(inputs));
+
+const IconTextMarquee = ({ centerIcon: CenterIcon, texts }: { centerIcon: LucideIcon; texts: string[] }) => {
+  const items = [...texts, ...texts];
+
+  return (
+    <div className="relative flex flex-col h-full w-full overflow-hidden" style={{ maskImage: "radial-gradient(ellipse at center, black 0%, black 30%, transparent 70%)" }}>
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col gap-2 w-full opacity-60">
+        {Array.from({ length: 10 }).map((_, row) => (
+          <div key={row} className={cn("flex gap-2", row % 2 === 0 ? "animate-marquee-horizontal" : "animate-marquee-horizontal-reverse")}>
+            {items.map((text, i) => (
+              <div key={i} className="flex items-center justify-center px-4 py-2 card rounded">
+                <p className="text-sm leading-snug">{text}</p>
+              </div>
+            ))}
+          </div>
+        ))}
+      </div>
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 flex items-center justify-center size-16 bg-primary text-primary-foreground backdrop-blur-sm rounded">
+        <CenterIcon className="size-6 text-primary-foreground" strokeWidth={1.5} />
+      </div>
+    </div>
+  );
+};
+
+export default IconTextMarquee;
